@@ -78,36 +78,10 @@ body {
 	margin-right: 30px;
 }
 
-.contact_mail::before {
-	display: inline-block;
-	content: "";
-	width: 16px;
-	height: 12px;
+.pic_smartphone,
+.pic_envelope {
+	/* display: inline-block; */
 	margin-right: 10px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: transparent;
-}
-
-.icon-envelope::before {
-	background-image: url(../images_svg/envelope.svg);
-}
-
-.contact_tel::before {
-	display: inline-block;
-	content: "";
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: transparent;
-}
-
-.icon-smartphone::before {
-	background-image: url(../images_svg/smartphone.svg);
 }
 
 .address {
@@ -141,8 +115,8 @@ body {
 .menu_list_link:focus,
 .contact_mail:hover,
 .contact_mail:focus,
-.icon-envelope:focus,
-.icon-envelope:hover {
+.pic_envelope:focus,
+.pic_envelope:hover {
 	color: var(--accent-color);
 }
 
@@ -219,6 +193,9 @@ body {
 	margin-right: 30px;
 }
 
+/* ======================картинки как background (помощью 
+                  псевдоэлемента ::before     =================== */
+/* 
 .features_list_item::before {
 	display: block;
 	content: "";
@@ -245,6 +222,27 @@ body {
 
 .icon-astronaut::before {
 	background-image: url(../images_svg/astronaut.svg);
+} */
+
+.features_item_pic {
+	display: block;
+	padding: 25px 100px;
+	/* content: ""; */
+	height: 120px;
+	margin-bottom: 30px;
+	/* background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: center; */
+	background-color: #f5f4fa;
+	border-radius: 4px;
+	justify-content: center;
+}
+
+.feature_pic {
+	display: block;
+	height: 70px;
+	width: 70px;
+	margin: 0;
 }
 
 .features_item_title {
@@ -354,43 +352,43 @@ body {
 	margin: 16px 32px 30px;
 	outline: #000000 solid 1px;
 	list-style: none;
-	/* align-items: center; */
 	height: 44px;
 	justify-content: space-between;
 }
 
-/* .social-item {
-	display: flexbox;
-	margin: 0;
-	width: 44px;
-	height: 44px;
-	background: #ffffff;
-} */
-
-.button_social {
+.link_social {
 	display: block;
 	margin: 0;
-	padding: 0;
+	/* padding: 0; */
 	width: 44px;
 	height: 44px;
-	background: #ffffff;
+	color: #afb1b8;
+	background-color: #ffffff;
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
 	outline: 1px solid blue;
+	align-items: center;
 }
 
-.button_social:not(:last-child) {
-	margin-right: 10px;
-}
-
-/* 
-.button-icon {
-	display: block;
+.icon_link {
+	/* display: block; */
 	height: 20px;
 	width: 20px;
 	margin: 0;
-} */
+}
+
+.link_social:hover,
+.link_social:focus {
+	background-color: var(--accent-color);
+	background-color: #ffffff;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+	color: currentColor;
+}
+
 /*==================   END OUR TEAM   ==================*/
 
 /*==================   FOOTER   ==================*/
@@ -399,13 +397,20 @@ body {
 	color: #ffffff;
 }
 .footer {
+	background: #2f303a;
+}
+
+.footer1 {
+	display: flex;
 	font-weight: 400;
 	letter-spacing: 0.03em;
-	/* height: 252px; */
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
 
-	background: #2f303a;
+.footer2 {
+	display: block;
+	width: 231px;
 }
 
 .address_footer {
@@ -415,7 +420,7 @@ body {
 	font-style: normal;
 	line-height: 1.71;
 	color: #ffffff;
-	margin-top: 20px;
+	margin: 20px 0 0 0;
 }
 .footer_contact_mail,
 .footer_contact_tel {
@@ -426,6 +431,37 @@ body {
 	line-height: 1.71;
 	color: rgba(255, 255, 255, 0.6);
 	margin-top: 9px;
+}
+
+.footer_socials {
+	display: block;
+	width: 206px;
+	padding: 0;
+	margin-left: 70px;
+	outline: cyan solid 1px;
+}
+
+.footer_social_list {
+	display: flex;
+	padding: 0;
+	margin-top: 20px;
+	outline: #000000 solid 1px;
+	list-style: none;
+	height: 44px;
+	/* width: 206px; */
+	justify-content: space-between;
+}
+
+.contact_us {
+	display: inline-block;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.143;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 /*==================   END OF FOOTER   ==================*/
 
