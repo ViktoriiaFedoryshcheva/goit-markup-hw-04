@@ -453,6 +453,7 @@ body {
 	background-color: var(--accent-color);
 }
 
+.icon_link .dark_bg,
 .icon_link:focus .dark_bg,
 .icon_link:hover .dark_bg {
 	fill: #ffffff;
