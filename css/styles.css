@@ -37,6 +37,7 @@ body {
 	font-size: 14px;
 	color: #212121;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .list {
@@ -348,34 +349,30 @@ body {
 
 .social_list {
 	display: flex;
-	padding: 0;
 	margin: 16px 32px 30px;
 	outline: #000000 solid 1px;
-	list-style: none;
-	height: 44px;
 	justify-content: space-between;
 }
 
 .link_social {
-	display: block;
-	margin: 0;
-	/* padding: 0; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
 	color: #afb1b8;
 	background-color: #ffffff;
-	border: none;
+	/* border: none; */
 	border-radius: 50%;
-	cursor: pointer;
+	/* cursor: pointer; */
 	outline: 1px solid blue;
-	align-items: center;
 }
 
 .icon_link {
 	/* display: block; */
 	height: 20px;
 	width: 20px;
-	margin: 0;
+	fill: #afb1b8;
 }
 
 .link_social:hover,
