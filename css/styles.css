@@ -378,13 +378,12 @@ body {
 .link_social:hover,
 .link_social:focus {
 	background-color: var(--accent-color);
-	background-color: #ffffff;
+	
 }
 
 .icon-link:hover,
 .icon-link:focus {
-	color: currentColor;
-}
+	fill: #ffffff;
 
 /*==================   END OUR TEAM   ==================*/
 
