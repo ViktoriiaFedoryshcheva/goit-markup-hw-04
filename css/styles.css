@@ -350,7 +350,6 @@ body {
 .social_list {
 	display: flex;
 	margin: 16px 32px 30px;
-	outline: #000000 solid 1px;
 	justify-content: space-between;
 }
 
@@ -360,12 +359,11 @@ body {
 	align-items: center;
 	width: 44px;
 	height: 44px;
-	color: #afb1b8;
+	/* color: #afb1b8; */
 	background-color: #ffffff;
 	/* border: none; */
 	border-radius: 50%;
 	/* cursor: pointer; */
-	outline: 1px solid blue;
 }
 
 .icon_link {
@@ -378,13 +376,12 @@ body {
 .link_social:hover,
 .link_social:focus {
 	background-color: var(--accent-color);
-	
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.icon_link:hover,
+.icon_link:focus {
 	fill: #ffffff;
-
+}
 /*==================   END OUR TEAM   ==================*/
 
 /*==================   FOOTER   ==================*/
@@ -392,6 +389,7 @@ body {
 .logo_white {
 	color: #ffffff;
 }
+
 .footer {
 	background: #2f303a;
 }
@@ -434,18 +432,30 @@ body {
 	width: 206px;
 	padding: 0;
 	margin-left: 70px;
-	outline: cyan solid 1px;
+	/* outline: cyan solid 1px; */
 }
 
 .footer_social_list {
 	display: flex;
-	padding: 0;
 	margin-top: 20px;
-	outline: #000000 solid 1px;
+	/* outline: #000000 solid 1px; */
 	list-style: none;
 	height: 44px;
-	/* width: 206px; */
 	justify-content: space-between;
+}
+
+.dark_bg {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark_bg:hover,
+.dark_bg:focus {
+	background-color: var(--accent-color);
+}
+
+.icon_link:focus .dark_bg,
+.icon_link:hover .dark_bg {
+	fill: #ffffff;
 }
 
 .contact_us {
