@@ -435,7 +435,7 @@ body {
 }
 
 .icon_client {
-	/* display: block; */
+	display: block;
 	fill: #afb1b8;
 }
 
