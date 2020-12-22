@@ -130,10 +130,10 @@ body {
 	color: var(--accent-color);
 }
 
-.pic_envelope:focus,
-.pic_envelope:hover,
-.pic_smartphone:focus,
-.pic_smartphone:hover {
+.contact_mail:hover .pic_envelope,
+.contact_mail:focus .pic_envelope,
+.contact_tel:hover .pic_smartphone,
+.contact_tel:focus .pic_smartphone {
 	fill: var(--accent-color);
 }
 /*==================   END header   ==================*/
@@ -444,8 +444,8 @@ body {
 	border: 1px solid var(--accent-color);
 }
 
-.icon_client:hover,
-.icon_client:focus {
+.link_client:hover .icon_clien,
+.link_client:focus .icon_client {
 	fill: var(--accent-color);
 }
 /*==================   END ABOUT   ==================*/
