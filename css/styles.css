@@ -393,8 +393,8 @@ body {
 	background-color: var(--accent-color);
 }
 
-.icon_link:hover,
-.icon_link:focus {
+.link_social:hover .icon_link,
+.link_social:focus .icon_link {
 	fill: #ffffff;
 }
 /*==================   END OUR TEAM   ==================*/
@@ -519,9 +519,9 @@ body {
 	background-color: var(--accent-color);
 }
 
-.icon_link .dark_bg,
-.icon_link:focus .dark_bg,
-.icon_link:hover .dark_bg {
+.dark_bg .icon_link,
+.dark_bg:focus .icon_link,
+.dark_bg:hover .icon_link {
 	fill: #ffffff;
 }
 
