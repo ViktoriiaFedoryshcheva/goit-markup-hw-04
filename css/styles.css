@@ -90,6 +90,7 @@ body {
 .pic_envelope {
 	/* display: inline-block; */
 	margin-right: 10px;
+	fill: #757575;
 }
 
 .address {
@@ -114,8 +115,7 @@ body {
 .logo_black {
 	color: #000000;
 }
-.pic_smartphone,
-.pic_envelope,
+
 .contact_mail,
 .contact_tel {
 	color: #757575;
