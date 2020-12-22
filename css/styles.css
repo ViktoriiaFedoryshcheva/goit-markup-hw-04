@@ -444,7 +444,7 @@ body {
 	border: 1px solid var(--accent-color);
 }
 
-.link_client:hover .icon_clien,
+.link_client:hover .icon_client,
 .link_client:focus .icon_client {
 	fill: var(--accent-color);
 }
